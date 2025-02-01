@@ -24,7 +24,7 @@
 
     // Französische Keywords (Score: 1 pro Treffer)
     const frenchKeywords = new Set([// Kleidung
-        "pantalon", "pantalons", "leggings", "blouse", "blouses", "tunique", "tuniques", "gilet", "gilets", "sweat", "sweats", "cardigan", "cardigans", "robe", "robes", "combinaison", "combinaisons", "jupe", "jupes", "blouson", "blousons", "anoraks", "sandales", "ballerines", "mocassins", "écharpe", "écharpes", "foulard", "foulards", "sac", "sacs", "chapeau", "chapeaux", "ceinture", "ceintures", "manteau", "manteaus", "bottes", "debardeur", "chemise", "chemises", "manche", "manches", "chemisier",
+        "pantalon", "pantalons", "veste", "leggings", "blouse", "blouses", "tunique", "tuniques", "gilet", "gilets", "sweat", "sweats", "cardigan", "cardigans", "robe", "robes", "combinaison", "combinaisons", "jupe", "jupes", "blouson", "blousons", "anoraks", "sandales", "ballerines", "mocassins", "écharpe", "écharpes", "foulard", "foulards", "sac", "sacs", "chapeau", "chapeaux", "ceinture", "ceintures", "manteau", "manteaus", "bottes", "debardeur", "chemise", "chemises", "manche", "manches", "chemisier",
 
         // Materialien & Muster
         "coton", "laine", "soie", "lin", "cuir", "rayures", "pois", "carreaux", "fleurs", "velours", "jean",
