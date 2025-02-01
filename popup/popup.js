@@ -1,18 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const scoreInput = document.getElementById("scoreThreshold");
+    const scoreDropdown = document.getElementById("scoreThreshold");
 
     // Lade gespeicherte Einstellungen
     chrome.storage.sync.get(["referenceScore"], function (result) {
-        if (result.referenceScore) {
-            scoreInput.value = result.referenceScore;
+        if (result.referenceScore !== undefined) {
+            scoreDropdown.value = result.referenceScore; // Setze gespeicherten Wert
         }
     });
 
     document.getElementById("save").addEventListener("click", function () {
-        let newScore = parseInt(scoreInput.value);
+        let newScore = parseInt(scoreDropdown.value);
         chrome.storage.sync.set({ referenceScore: newScore }, function () {
             alert("Einstellungen gespeichert!");
         });
     });
 });
-

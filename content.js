@@ -7,7 +7,17 @@
     'use strict';
 
     const processedItems = new Set();
-    const referenceScore = 1; // hier einstellen, wie streng gefiltert wird
+
+    let referenceScore = 2; // Standardwert setzen (als Zahl!)
+
+    // **Lade den Wert aus dem Speicher korrekt**
+    chrome.storage.sync.get("referenceScore", function (data) {
+        if (data.referenceScore !== undefined) {
+            referenceScore = Number(data.referenceScore);
+        }
+        console.log("Geladener Filterwert:", referenceScore);
+        markItems(); // Starte erst jetzt das Markieren!
+    });
 
     // Französische Sonderzeichen (Score: 2)
     const frenchSpecialChars = new Set(["é", "è", "ê", "ë", "à", "â", "î", "ï", "ô", "û", "ù", "ç"]);
@@ -210,8 +220,5 @@
     // Beobachtet die Seite auf Änderungen und aktualisiert die Artikel
     const observer = new MutationObserver(markItems);
     observer.observe(document.body, {childList: true, subtree: true});
-
-    // Startet das Markieren der Artikel beim Laden der Seite
-    markItems();
 })();
 
