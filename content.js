@@ -1,13 +1,3 @@
-// ==UserScript==
-// @name         Nur Artikel aus Deutschland in Vinted anzeigen
-// @namespace    http://tampermonkey.net/
-// @version      1.0
-// @description  Blendet Artikel, die vermutlich in Frankreich eingestellt wurden, aus. Dabei wird die Wahrscheinlichkeit durch französische Begriffe im Artikeltitel berechnet.
-// @author       sneeed
-// @match        *://*.vinted.de/*
-// @grant        none
-// ==/UserScript==
-
 // TODO
 // popup um italienisch, deutsch, französisch erweitern
 
