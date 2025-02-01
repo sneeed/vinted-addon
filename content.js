@@ -30,7 +30,7 @@
         "bleu", "bleue", "vert", "verte", "gris", "grise", "noir", "noire", "blanc", "blanche", "violet", "violette", "beige", "bordeaux", "turquoise", "kaki", "terracota", "rouge", "jaune", "marron", "rose", "émeraude", "argent", "argente", "doré", "dorée", "cuivre", "cuivrée", "crème", "fuchsia", "lilas", "saumon", "saumonée", "cendre", "cendrée", "abricot", "abricotée", "lavande", "améthyste", "carmin", "carminée", "ivoire", "prune", "pêche", "aubergine", "multicolore",
 
         // Zustand & Stil
-        "neuf", "neufs", "usagé", "usagée", "bon état", "vintage", "chic", "décontracté", "élégant", "élégante",
+        "neuf", "neufs", "usagé", "usagée", "bon état", "vintage", "chic", "décontracté", "élégant", "élégante", "superb",
 
         // Größen
         "taille", "taille unique", "petit", "petite", "grand", "grande", "moyen", "moyenne", "ans", "longues", "longue",
