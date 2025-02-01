@@ -14,3 +14,4 @@
 
 # Notizen
 - zum Testen nach "Kiabi" (französische Marke), "Petit Bateau" oder "chemise" gesucht
+- Alternativer Ansatz: https://chromewebstore.google.com/detail/vinted-filter-by-location/ndeeghnjilpjgaphgfjaoioflnpijhkm?hl=en-US&utm_source=ext_sidebar
