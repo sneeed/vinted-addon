@@ -160,30 +160,30 @@
         item.addEventListener("mouseleave", restoreTransparency);
     }
 
-    /**
-     * Erstellt oder aktualisiert das Score-Label für einen Artikel.
-     * @param {HTMLElement} item - Das Artikel-Element
-     * @param {number} score - Der berechnete Score des Artikels
-     */
-    function updateScoreLabel(item, score) {
-        let scoreLabel = item.querySelector('.score-label');
-
-        if (!scoreLabel) {
-            scoreLabel = document.createElement('div');
-            scoreLabel.className = 'score-label';
-            scoreLabel.style.position = 'absolute';
-            scoreLabel.style.top = '5px';
-            scoreLabel.style.left = '5px';
-            scoreLabel.style.background = 'rgba(0, 0, 0, 0.7)';
-            scoreLabel.style.color = 'white';
-            scoreLabel.style.padding = '2px 5px';
-            scoreLabel.style.fontSize = '12px';
-            scoreLabel.style.borderRadius = '3px';
-            scoreLabel.style.zIndex = '10';
-            item.appendChild(scoreLabel);
-        }
-        scoreLabel.textContent = `Score: ${score}`;
-    }
+    // /**
+    //  * Erstellt oder aktualisiert das Score-Label für einen Artikel.
+    //  * @param {HTMLElement} item - Das Artikel-Element
+    //  * @param {number} score - Der berechnete Score des Artikels
+    //  */
+    // function updateScoreLabel(item, score) {
+    //     let scoreLabel = item.querySelector('.score-label');
+    //
+    //     if (!scoreLabel) {
+    //         scoreLabel = document.createElement('div');
+    //         scoreLabel.className = 'score-label';
+    //         scoreLabel.style.position = 'absolute';
+    //         scoreLabel.style.top = '5px';
+    //         scoreLabel.style.left = '5px';
+    //         scoreLabel.style.background = 'rgba(0, 0, 0, 0.7)';
+    //         scoreLabel.style.color = 'white';
+    //         scoreLabel.style.padding = '2px 5px';
+    //         scoreLabel.style.fontSize = '12px';
+    //         scoreLabel.style.borderRadius = '3px';
+    //         scoreLabel.style.zIndex = '10';
+    //         item.appendChild(scoreLabel);
+    //     }
+    //     scoreLabel.textContent = `Score: ${score}`;
+    // }
 
     /**
      * Scannt alle Artikel auf der Seite und wendet die Transparenz an.
