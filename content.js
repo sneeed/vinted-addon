@@ -45,7 +45,9 @@
         "chaud", "pluie", "lot", "et", "ou", "sans"]);
 
     // Whitelist mit Begriffen, die bei der Scoring-Berechnung ignoriert werden
-    const whitelist = new Set(["Petit Bateau", "Lacoste", "Chanel", "Dior", "Louis Vuitton", "Yves Saint Laurent", "Balmain", "Givenchy", "Jean Paul Gaultier", "Hermès", "Celine", "Lanvin", "Kenzo", "A.P.C.", "Isabel Marant", "Sandro", "Maje", "Ba&sh", "The Kooples", "Sézane", "Zadig & Voltaire", "Chloé", "Courrèges", "Jacquemus", "Patou", "Carven", "Officine Générale", "Pierre Cardin", "Paco Rabanne", "Loewe", "Kookaï", "Morgane", "Eden Park", "Agnes B", "Saint James", "Sessùn", "Le Coq Sportif", "Armor Lux", "IKKS", "Cop Copine", "Promod", "Gerard Darel", "Marithé + François Girbaud", "Naf Naf", "Cyrillus", "Vertbaudet", "Orcival", "American Vintage", "Maison Kitsuné", "Rouje", "Repetto", "Valentino",]);
+    const whitelist = new Set([
+        // Marken
+        "Petit Bateau", "Lacoste", "Chanel", "Dior", "Louis Vuitton", "Yves Saint Laurent", "Balmain", "Givenchy", "Jean Paul Gaultier", "Hermès", "Celine", "Lanvin", "Kenzo", "A.P.C.", "Isabel Marant", "Sandro", "Maje", "Ba&sh", "The Kooples", "Sézane", "Zadig & Voltaire", "Chloé", "Courrèges", "Jacquemus", "Patou", "Carven", "Officine Générale", "Pierre Cardin", "Paco Rabanne", "Loewe", "Kookaï", "Morgane", "Eden Park", "Agnes B", "Saint James", "Sessùn", "Le Coq Sportif", "Armor Lux", "IKKS", "Cop Copine", "Promod", "Gerard Darel", "Marithé + François Girbaud", "Naf Naf", "Cyrillus", "Vertbaudet", "Orcival", "American Vintage", "Maison Kitsuné", "Rouje", "Rose", "Repetto", "Valentino",]);
 
 
     /**
