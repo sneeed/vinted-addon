@@ -9,6 +9,8 @@
     const processedItems = new Set();
 
     let referenceScore = 2; // Standardwert setzen (als Zahl!)
+    const scoreSpecialChar = 1;
+    const scoreKeyword = 1;
 
     // **Lade den Wert aus dem Speicher korrekt**
     chrome.storage.sync.get("referenceScore", function (data) {
@@ -19,10 +21,10 @@
         markItems(); // Starte erst jetzt das Markieren!
     });
 
-    // Französische Sonderzeichen (Score: 2)
+    // Französische Sonderzeichen
     const frenchSpecialChars = new Set(["é", "è", "ê", "ë", "à", "â", "î", "ï", "ô", "û", "ù", "ç"]);
 
-    // Französische Keywords (Score: 1 pro Treffer)
+    // Französische Keywords
     const frenchKeywords = new Set([// Kleidung
         "pantalon", "pantalons", "veste", "leggings", "blouse", "blouses", "tunique", "tuniques", "gilet", "gilets", "sweat", "sweats", "cardigan", "cardigans", "robe", "robes", "combinaison", "combinaisons", "jupe", "jupes", "blouson", "blousons", "anoraks", "sandales", "ballerines", "mocassins", "écharpe", "écharpes", "foulard", "foulards", "sac", "sacs", "chapeau", "chapeaux", "ceinture", "ceintures", "manteau", "manteaus", "bottes", "debardeur", "chemise", "chemises", "manche", "manches", "chemisier",
 
@@ -70,7 +72,7 @@
         // Berechnung des Scores durch französische Keywords
         words.forEach(word => {
             if (frenchKeywords.has(word)) {
-                baseScore += 1;
+                baseScore += scoreKeyword;
                 matchedWords.push(word);
             }
         });
@@ -78,7 +80,7 @@
         // Berechnung des Scores durch französische Sonderzeichen
         for (const char of lowerTitle) {
             if (frenchSpecialChars.has(char)) {
-                baseScore += 2;
+                baseScore += scoreSpecialChar;
                 matchedChars.push(char);
             }
         }
@@ -95,14 +97,14 @@
                 const wlWords = lowerWhitelistTerm.split(/\s+/);
                 wlWords.forEach(wlWord => {
                     if (frenchKeywords.has(wlWord)) {
-                        wlScore += 1;
+                        wlScore += scoreKeyword;
                     }
                 });
 
                 // Sonderzeichen aus dem Markennamen berechnen
                 for (const char of lowerWhitelistTerm) {
                     if (frenchSpecialChars.has(char)) {
-                        wlScore += 2;
+                        wlScore += scoreSpecialChar;
                     }
                 }
 
