@@ -1,8 +1,3 @@
-// TODO
-// popup um italienisch, deutsch, französisch erweitern
-
-// zum Testen nach "Kiabi" (französische Marke) gesucht
-
 (function () {
     'use strict';
 
