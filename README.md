@@ -1,6 +1,8 @@
 # vinted-addon
 
 # TODO
+- wahrscheinlich französische Artikel ans Ende des Grids stellen
+- Script erweitern um einen Parser (deaktivierbar), der dann von vorne nach hinten alle Items prüft (Status klein unter derzeitigem Artikel zeigen), und das entsprechende Land dazuschreibt, französische Artikel direkt rauslöscht
 - Addon in Chrome Store veröffentlichen
   - Eintrag mit Anleitung/Screenshots
   - Icon
